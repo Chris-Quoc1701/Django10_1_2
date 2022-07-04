@@ -1,0 +1,49 @@
+{% extends 'base.html' %} 
+
+{% block layout1 %}
+
+<div class="TableBlock">
+        <table class="Tablei">
+            <caption id="capti">
+                Table Of Job
+            </caption>
+
+            <thead class="headt">
+                <tr id="Titl">
+                    <th>Name Job</th>
+                    <th>Date Update</th>
+                </tr>
+            </thead>
+
+            <tbody class="bodyt">
+                {% for data in name %}
+                <tr>
+                    <td id="namejob"><a href="https://github.com{{ data.urls_job }}">{{ data.title_job }}</a></td>
+                    <td id="date">{{ data.date_job|date:'d-m-Y' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <footer class="footer">
+            {% if name.has_previous %}
+            <a href="?page=1">&Leftarrow;</a>
+            <a href="?page={{ name.previous_page_number}}">{{ name.previous_page_number }}</a>
+            {% endif %}
+            <span> {{ name.number }}</span>
+            {% if name.has_next %}
+            <a href="?page={{ name.next_page_number}}">{{ name.next_page_number }}</a>
+            <a href="?page={{ name.paginator.num_pages }}">&Rightarrow;;</a>
+            {% endif %}
+        </footer>
+</div>
+
+<div class="adv">
+        <h3>Would you like to learn new language</h3>
+        <a href="https://pymi.vn/">
+            <img class="img" src="https://textpro.me/images/user_image/2022/07/62bf18e3a5b30.jpg" />
+        </a>
+        <div id="des">Click in image above for join</div>
+</div>
+
+{% endblock %}

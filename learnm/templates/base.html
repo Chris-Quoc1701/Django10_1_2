@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8" />
+        <title>List of Jobs Avalable</title>
+        <link rel="stylesheet" href="{% static 'indexjob.css' %}" type="text/css" />
+    </head>
+
+    <body>
+        <head>
+            <div>
+                <div class="HeaderBar">
+                    <h1><a href="http://127.0.0.1:8101/index/">Welcome my blog</a></h1>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">FindJob</a></li>
+                            <li><a href="#">...WIP...</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div>
+                {% block layout1 %} {% endblock %}
+            </div>
+        </head>
+
+        <div>
+            {% block indexx %} {% endblock %}
+        </div>
+
+        <div class="bot">
+            This is a footbar
+        </div>
+    </body>
+</html>

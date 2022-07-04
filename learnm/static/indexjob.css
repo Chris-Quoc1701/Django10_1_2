@@ -1,0 +1,149 @@
+body{
+    background: #ccae62;
+}
+
+.HeaderBar{
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    margin: -8px -8px 16px -8px;
+    padding: 0px 50px 0px 45px;
+    z-index: 1;
+}
+.HeaderBar a{
+    color: #f1f2f6;
+    text-decoration: none;
+}
+
+.menu ul{
+    list-style-type: none;
+    float: right;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a, .menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.menu li:hover a, .menu li span{
+    color: #36d900;
+    text-decoration: none;
+}
+
+
+.TableBlock{
+    position: relative;
+    max-inline-size: 1000px;
+    z-index: 2;
+}
+.Tablei{
+    border-collapse: collapse;
+
+}
+.Tablei tr:nth-child(even){background-color: aliceblue;}
+
+#capti{
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 20px 0px 0px 0px;
+    background-color: #7bed9f;
+    padding: 25px 30px 25px 0px;
+    border: 0.5px solid;
+}
+.headt th{
+    padding: 20px;
+}
+.bodyt{
+    background-color: white;
+    border: 2px solid;
+}
+#Titl {
+    background-color: #d0e6fc;
+    border: 2px solid;
+}
+
+#namejob{
+    max-inline-size: 30rem;
+    padding: 20px 25px 0px 10px;
+    
+}
+#date{
+    padding: 20px 20px 15px 25PX;
+}
+
+.footer{
+    background-color: #7bed9f;
+    margin: 0px 391px 0px 0px;
+    padding: 24px 24px 45px 0px;
+    text-align: center;
+    z-index: 3;
+    border: 0.5px solid;
+    font-size: 22px;
+}
+
+.bot {
+    background-color: #91aec0;
+    text-align: center;
+    padding: 49px;
+    margin: 29px -9px -8px -8px;
+    padding: 62px 16px 46px 1px;
+}
+
+.adv:hover{
+    background-color: rgba(244, 244, 244, 0.9);
+}
+
+.adv{
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    right: 50rem;
+    top: 155px;
+    width: 16em;
+}
+.img{
+    width: 100%;
+    border-radius: 150px;
+}
+
+#des{
+    font-size: 20px;
+    font-style: italic;
+    font-size: medium;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+.capti2{
+    text-align: center;
+    background-color: gainsboro;
+    margin: 16px 0px 0px 0px;
+    padding: 35px 0px 35px 15px;
+}
+.column{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 930px;
+}
+
+.LibraryBlock::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.column p:hover{
+    background-color: #d1ccc0;
+}
+.column:hover{
+    background-color: #f7f1e3;
+    border-radius: 80px;
+}

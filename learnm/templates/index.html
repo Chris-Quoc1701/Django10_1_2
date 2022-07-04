@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block indexx %}
+
+<h1 class='capti2'>
+    Library Of Pymier
+</h1>
+<div class="LibraryBlock">
+    {% for name in tit_name %}
+    <div class="column">
+        <h2>{{ name.title_blog }}</h2>
+        {% for data in name_blog %} 
+        {% if data.title_content|lower == name.title_blog|lower %}
+        <p><a href="{{ data.urls_content }}">{{ data.name_content }}</a></p>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
