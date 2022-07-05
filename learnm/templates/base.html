@@ -3,7 +3,9 @@
     <head>
         {% load static %}
         <meta charset="UTF-8" />
-        <title>List of Jobs Avalable</title>
+        <title>
+            {% block titles %} {% endblock %}
+        </title>
         <link rel="stylesheet" href="{% static 'indexjob.css' %}" type="text/css" />
     </head>
 
@@ -11,11 +13,11 @@
         <head>
             <div>
                 <div class="HeaderBar">
-                    <h1><a href="http://127.0.0.1:8101/index/">Welcome my blog</a></h1>
+                    <h1><a href="/">Welcome my blog</a></h1>
                     <nav class="menu">
                         <ul>
-                            <li><a href="#">Library</a></li>
-                            <li><a href="#">FindJob</a></li>
+                            <li><a href="/">Library</a></li>
+                            <li><a href="/indexjob">FindJob</a></li>
                             <li><a href="#">...WIP...</a></li>
                         </ul>
                     </nav>
