@@ -6,7 +6,7 @@ Library Of Job
 {% endblock %}
 
 {% block layout1 %}
-
+{% load static %}
 <div class="TableBlock">
         <table class="Tablei">
             <caption id="capti">
@@ -46,7 +46,7 @@ Library Of Job
 <div class="adv">
         <h3>Would you like to learn new language</h3>
         <a href="https://pymi.vn/">
-            <img class="img" src="https://textpro.me/images/user_image/2022/07/62bf18e3a5b30.jpg" />
+            <img class="img" src= "{% static 'images/advise.jpg' %}" alt="Pymier"/>
         </a>
         <div id="des">Click in image above for join</div>
 </div>

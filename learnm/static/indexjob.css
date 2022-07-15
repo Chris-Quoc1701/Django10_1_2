@@ -1,5 +1,5 @@
 body{
-    background: #ccae62;
+    background: #ffffff;
 }
 
 .HeaderBar{
@@ -104,7 +104,7 @@ body{
     position: absolute;
     right: 50rem;
     top: 155px;
-    width: 16em;
+    width: 20em;
 }
 .img{
     width: 100%;
